@@ -2,8 +2,11 @@
   "name": "dash-prototype",
   "scripts": {
     "cadences:dev": "nuxt --config-file apps/cadences/nuxt.config.js",
+    "cadences:build": "nuxt build --config-file apps/cadences/nuxt.config.js",
     "sales-analytics:dev": "PORT=4000 nuxt --config-file apps/sales-analytics/nuxt.config.js",
+    "sales-analytics:build": "nuxt build --config-file apps/sales-analytics/nuxt.config.js",
     "dev": "concurrently \"npm run cadences:dev\" \"npm run sales-analytics:dev\"",
+    "build": "concurrently \"npm run cadences:build\" \"npm run sales-analytics:build\""
   },
   "dependencies": {
     "concurrently": "^7.2.1",

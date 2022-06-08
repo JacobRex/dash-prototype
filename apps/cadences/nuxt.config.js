@@ -1,4 +1,4 @@
 export default {
   srcDir: __dirname,
-  buildDir: '.nuxt/cadences'
+  buildDir: 'dist/cadences'
 }
